@@ -95,17 +95,55 @@ public class C11QueStackDeque {
 //        Queue<Integer> pq1 = new PriorityQueue<>();
 
 //        최대힙인경우
-        Queue<Integer>maxPq = new PriorityQueue<>(Comparator.reverseOrder());
-        maxPq.add(30);
-        maxPq.add(10);
-        maxPq.add(20);
-        while (!maxPq.isEmpty()){
-            System.out.println(maxPq.poll());
-        }
+//        Queue<Integer>maxPq = new PriorityQueue<>(Comparator.reverseOrder());
+//        maxPq.add(30);
+//        maxPq.add(10);
+//        maxPq.add(20);
+//        while (!maxPq.isEmpty()){
+//            System.out.println(maxPq.poll());
+//        }
+//        stack
+//        Stack<Integer> st = new Stack<>();
+//        st.push(10);
+//        st.push(20);
+//        st.push(30);
+//        System.out.println(st.pop()); //30
+//        System.out.println(st.peek()); //20
+//        System.out.println(st.size());
+//        System.out.println(st.isEmpty());
+//
+//        while (!st.isEmpty()){
+//            System.out.println(st.pop());
+//        }
 
+//        같은 숫자는 싫어
 
+//        Deque : addFirst, addLast, pollFirst, pollLast
+//        Deque<Integer> d1 = new ArrayDeque<>();
+//        d1.addLast(10);
+//        d1.addLast(20);
+//        System.out.println(d1);
+//        d1.addFirst(30);
+//        System.out.println(d1);
+//        System.out.println(d1.peekFirst());
+//        System.out.println(d1.peekLast());
+//        System.out.println(d1.pollLast());
+//        System.out.println(d1.pollFirst());
 
-
+//
+//        class Solution {
+//            boolean solution(String s) {
+//                char[] arr = s.toCharArray();
+//                int cnt = 0;
+//
+//                for (char c: arr){
+//                    cnt = c=='(' ? cnt+1 : cnt-1;
+//                    if (cnt < 0) return false;
+//                }
+//
+//                return cnt==0;
+//            }
+//        }
 
 
 

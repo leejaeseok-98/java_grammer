@@ -8,42 +8,43 @@ public class C09Map {
 //        map은 인덱스 요소가 없으므로, 순서가 무의미.
 //        키값은 중복되지 않고, value를 덮어쓰기함
 //        Map<String,String> sports = new HashMap<>();
-////        sports.put("basketball", "농구");
-////        sports.put("soccer", "축구");
-////        sports.put("baseball", "야구");
-////        sports.put("baseball", "공놀이");
-////        System.out.println(sports);
-//
-////        map은 key를 통해 value를 get
-////        map에서 key값을 통한 복잡도는 O(1)
+//        sports.put("basketball", "농구");
+//        sports.put("soccer", "축구");
+//        sports.put("baseball", "야구");
+//        sports.put("baseball", "공놀이");
+//        System.out.println(sports);
+
+
+//        map은 key를 통해 value를 get
+//        map에서 key값을 통한 복잡도는 O(1)
 //        System.out.println(sports.get("baseball"));
-//
-//
-////        MAP에 전체데이터 조회하는 방법
-////        keyset() : map의 key목록을 리턴하는 메서드
-////        values() ; MAP의 VALUE목록을 리턴하는 메서드
+
+
+//        MAP에 전체데이터 조회하는 방법
+//        keyset() : map의 key목록을 리턴하는 메서드
+//        values() ; MAP의 VALUE목록을 리턴하는 메서드
 //        for (String key ; sports.keySet()){
 //            System.out.println("sports의 key값은" + key);
 //            System.out.println("sports의 value값은" + sports.get(key));
 //        }
-//
+
+
 ////        remove : 키를 통해 삭제
 //        sports.remove("baseball");
 //        System.out.println(sports);
-//
 //        sports.put("soccer", "운동");
-//
+
 ////        putIfAbsent : key값이 없는 경우에만 put
 //        sports.putIfAbsent("soccer","운동");
 //        sports.putIfAbsent("baseball","야구");
 //        System.out.println(sports.get(sports));
-//
+
 ////        getOrDefault : key가 없으면 default값으로 return
 //        System.out.println(sports.get("pingpong"));
 //        System.out.println(sports.getOrDefault("pingpong", "그런키 없음"));
 //        System.out.println(sports.getOrDefault("baseball", "그런키 없음"));
-//
-//
+
+
 ////      containsKey : key가 있으면 true, 없으면 false
 //        System.out.println(sports.containsKey("baseball"));
 //        System.out.println(sports.containsKey("pingpong"));
@@ -59,6 +60,8 @@ public class C09Map {
 //                sports.put(string,1);
 //        }
 //        System.out.println(sports);
+
+
 
 //        완주하지 못한 선수
 //        String[] participant = {"leo", "kiki", "eden"};
@@ -78,12 +81,7 @@ public class C09Map {
 //}
 
 
-// 의상
-//        조합의 수를 출력
-//        의상 1개 이상 입어야 하고 종류에서 겹치면 안됨
-//        조합을 어떻게 하지 /
-//        키, 벨류로 함 / 벨류로 제한을 둬야 함/ 조합이 1개짜리, 2개짜리 등을 만들어야함
-//        키값을 넣으면서 count세주고 /
+// 프로그래머스 의상
 
 //        int answer = 0;
 //
