@@ -2,6 +2,8 @@ package C02ClassBasic;
 
 public class C0202Class {
     public static void main(String[] args) {
+
+
 //        System.out.println(MyCalculator.sum(10,20));
 
 //        A부서의 매출

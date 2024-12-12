@@ -13,10 +13,12 @@ public class C0206ClassPractice {
         Account a2 = new Account("222222",200000);
         accounts.add(a1);
         accounts.add(a2);
+
 //        계좌번호 목록조회
         for (Account a : accounts) {
             System.out.println(a.getAcNumber());
         }
+
 //        사용자1이 사용자2에게 돈을 보내는 상황 : 계좌번호를 알고 있는 상황
         for (Account a : accounts) {
             if (a.getAcNumber().equals("111111")){
@@ -28,7 +30,7 @@ public class C0206ClassPractice {
         }
 //       잔고조회
         for (Account a : accounts) {
-            System.out.println(a.getAcNumber()+"계좌번호는 "+a.getAcNumber()+ "잔고는 "+ a.getBalance()));
+            System.out.println(a.getAcNumber()+"계좌번호는 "+a.getAcNumber()+ "잔고는 "+ a.getBalance());
         }
 //        map을 자료구조로 사용시
         //        Map을 자료구조로 사용시
@@ -44,6 +46,9 @@ public class C0206ClassPractice {
 }
 
 class Account{
+    private String acNumber;
+    private int balance;
+
     public String getAcNumber() {
         return acNumber;
     }
@@ -51,9 +56,6 @@ class Account{
     public int getBalance() {
         return balance;
     }
-
-    private String acNumber;
-    private int balance;
 
     public void setBalance(int balance) {
         this.balance = balance;

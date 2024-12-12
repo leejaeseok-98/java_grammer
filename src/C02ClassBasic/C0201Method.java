@@ -2,6 +2,9 @@ package C02ClassBasic;
 
 public class C0201Method {
     public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder();
+
+
 //        for문을 이요해 1~10까지 토탉값 가산후 출력
         int total = 0;
         for (int i = 1; i < 10; i++) {
@@ -22,6 +25,8 @@ public class C0201Method {
         System.out.println(C0201Method.sumAcc(10, 20));
 //        같은 클래스 내에서 정의된 클래스메서드의 호출은 클래스명 생략가능
         System.out.println(sumAcc(10, 30));
+
+
 
     }
 
