@@ -45,10 +45,11 @@ public class BoardService {
                 Post.AllPostSearch();
             }
             else if (input.equals("6")) {
-
+                Post.DetailPostView(1);
             }
             else if (input.equals("7")) {
-
+                System.out.println("서비스를 종료합니다.");
+                break;
             }
         }
 
@@ -115,7 +116,7 @@ class Author{
 
     public static void AllAuthorSearch(){
         for (Author a : authors) {
-            System.out.println(a.getId() + " " + a.getEmail());
+            System.out.println("작성자ID : "+a.getId() + " " + " 작성자email : "+ a.getEmail());
         }
     }
 
@@ -140,11 +141,12 @@ class Post{
     private long author_id = 0L;
     private static long static_postId = 0L;
     private long postId = 0L;
+    private String email;
     static List<Post> postList = new ArrayList<>();
-
     public Post(String title, String contents, String email) {
         this.title = title;
         this.contents = contents;
+        this.email = email;
         boolean isValidAuthor = false;
         for (Author a : Author.authors) {
             if (a.getEmail().equals(email)) {
@@ -166,6 +168,10 @@ class Post{
         return static_postId;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
     public long getPostId() {
         return postId;
     }
@@ -184,7 +190,15 @@ class Post{
 
     public static void AllPostSearch(){
         for (Post post : postList) {
-            System.out.println(post.getPostId() + " " + post.getTitle());
+            System.out.println("post_id : "+post.getPostId() + " " + " 제목 : "+post.getTitle());
+        }
+    }
+    public static void DetailPostView(long postId){
+        for (Post post : postList) {
+            if (post.getPostId() == postId){
+                System.out.println("작성id : " + post.getPostId() + " 제목 : "+ post.getTitle() + " 내용 : " + post.getContents()
+                + "작성자email : " + post.getEmail());
+            }
         }
     }
 }
