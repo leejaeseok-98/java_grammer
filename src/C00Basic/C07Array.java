@@ -20,7 +20,7 @@ public class C07Array {
 //        intArr2[3] = 7;
 //        System.out.println(intArr2[4]);
 //
-////        참조자료형의 배열은 기본적으로 null초기화
+//        참조자료형의 배열은 기본적으로 null초기화
 //        String[] stArr = new String[5];
 //        stArr[0]  = "hello1";
 //        stArr[1]  = "hello2";
